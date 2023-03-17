@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocioConnect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="logo.png" class="logo">
+            <div class="header-text">
+                <h1>Bridging Distances, Bringing Loved Ones Closer,<br> Strengthening Bonds </h1>
+                <span class="square"></span>
+                <p>
+                    "SocioConnect is a social media app that brings loved ones closer, bridging distances and
+                    strengthening bonds. With a user-friendly platform, users can connect with friends and family in
+                    real-time through text, audio, and video communication."
+                </p>
+                <button class="common-btn"> Read More </button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span><br>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav id="sidenav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">ABOUT US </a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#">BLOG </a></li>
+        </ul>
+
+    </nav>
+    <img src="menu.png" id="menuBtn">
+    <!-- about -->
+    <section class="about">
+        <div class="about-left-col">
+            <img src="image_1.png">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text"></div>
+        </div>
+
+    </section>
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sidenav = document.getElementById("sidenav");
+
+        sidenav.style.right = "-250px";
+        menuBtn.onclick = function () {
+            if (sidenav.style.right == "-250px") {
+                sidenav.style.right = "0";
+            }
+            else {
+                sidenav.style.right = "-250px";
+            }
+        }
+    </script>
+</body>
+
+</html>
