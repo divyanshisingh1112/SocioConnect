@@ -1,0 +1,32 @@
+<div class="feature-row">
+            <div class="feature-col">
+                <img src="#">
+                <h4>Messaging and calling</h4>
+                <p> SocioConnect allows users to communicate in real-time through text messaging,
+                    voice calls, and video calls. This feature allows users to stay connected with their loved ones no
+                    matter where they are in the world.</p>
+            </div>
+            <div class="feature-col">
+                <img src="#">
+                <h4>Personalized profiles</h4>
+                <p>Users can create unique profiles with custom backgrounds and avatars to express their personality and
+                    make their profile their own.</p>
+            </div>
+            <div class="feature-col">
+                <img src="#">
+                <h4>Group chats and channels</h4>
+                <p>Users can create groups and channels to chat with multiple people at once.
+                    This feature is especially useful for coordinating events, sharing information, and staying
+                    connected
+                    with groups of friends or family members.</p>
+            </div>
+            <div class="feature-col">
+                <img src="#">
+                <h4>Security</h4>
+                <p>Security is our top priority at SocioConnect. We use advanced encryption technologies to protect your
+                    personal information and ensure your conversations and data are safe. Our platform also features
+                    robust privacy settings, giving you complete control over who can see your profile and posts.
+                    Additionally, our team constantly monitors for any suspicious activity and promptly takes action to
+                    prevent any potential security breaches. With SocioConnect, you can enjoy peace of mind knowing your
+                    information is secure.</p>
+            </div>
