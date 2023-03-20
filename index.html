@@ -1,95 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SocioConnect</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
+    <title>SocioConnect</title>
+
 </head>
 
 <body>
-    <section id="header">
-        <div class="container">
-            <img src="logo.png" class="logo">
-            <div class="header-text">
-                <h1>Bridging Distances, Bringing Loved Ones Closer,<br> Strengthening Bonds </h1>
-                <button class="common-btn"> Read More </button>
-                <div class="slider">
-                    <div class="images">
-                        <input type="radio" name="slide" id="img1" checked>
-                        <input type="radio" name="slide" id="img2">
-                        <input type="radio" name="slide" id="img3">
-                        <input type="radio" name="slide" id="img4">
-
-                        <img src="socio1.png" class="m1" alt="img1">
-                        <img src="socio2.jpg" class="m2" alt="img2">
-                        <img src="socio3.jpg" class="m3" alt="img3">
-                        <img src="socio4.jpeg" class="m4" alt="img4">
-                    </div>
-                    <div class="dots">
-                        <label for="img1"></label>
-                        <label for="img2"></label>
-                        <label for="img3"></label>
-                        <label for="img4"></label>
-                    </div>
-                </div>
-                <div class="line">
-                    <span class="line-1"></span><br>
-                    <span class="line-2"></span><br>
-                    <span class="line-3"></span><br>
-                </div>
+    <h1>Connect to the world with ease</h1>
+    <div class="slider-frame">
+        <div class="slide-images">
+            <div class="img-container">
+                <img src="img1.jpg">
+            </div>
+            <div class="img-container">
+                <img src="img2.jpg">
+            </div>
+            <div class="img-container">
+                <img src="img3.jpg">
+            </div>
+            <div class="img-container">
+                <img src="socio1.jpg">
+            </div>
+            <div class="img-container">
+                <img src="socio2.jpg">
+            </div>
+            <div class="img-container">
+                <img src="socio3.jpg">
+            </div>
+            <div class="img-container">
+                <img src="socio4.jpg">
             </div>
         </div>
-    </section>
-    <nav id="sidenav">
-        <ul>
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="feature.html">features</a></li>
-            <li><a href="about.html">ABOUT US </a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-            <li><a href="blog.html">BLOG </a></li>
-        </ul>
-
-    </nav>
-    <img src="menu.png" id="menuBtn">
-
-    <script>
-        var menuBtn = document.getElementById("menuBtn");
-        var sidenav = document.getElementById("sidenav");
-
-        sidenav.style.right = "-250px";
-        menuBtn.onclick = function () {
-            if (sidenav.style.right == "-250px") {
-                sidenav.style.right = "0";
-            }
-            else {
-                sidenav.style.right = "-250px";
-            }
-        }
-    </script>
-    <div class="footer">
-        <div class="col-1">
-            <h3>Useful Links</h3>
-            <a href="#">HOME</a>
-            <a href="#">FEATURES</a>
-            <a href="#">ABOUT US</a>
-        </div>
-        <div class="col-2">
-            <h3>NEWSLETTER</h3>
-            <form>
-                <input type="email" placeholder="Enter your Email address" required>
-                <br>
-                <button type="submit">SUBSCRIBE NOW</button>
-            </form>
-        </div>
-        <div class="col-3">
-            <h3>CONTACT</h3>
-            <p>4202 E Fowler Ave, <br>Tampa, FL 33620</p>
-        </div>
     </div>
-
 </body>
 
 </html>
