@@ -85,12 +85,8 @@ form select {
     color: #fff;
 }
 
-.form-group {
+#form-group-id {
     display: none;
-}
-
-.form-group.show {
-    display: block;
 }
 
 #custom-amount-input {
@@ -167,4 +163,109 @@ button[type="button"]:hover {
 button#pay-now-button {
     display: block;
     margin: 20px auto 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+
+    .signup-form,
+    .donation-form {
+
+        border-radius: 5px;
+        padding: 10px;
+        width: 90%;
+        margin: 10px;
+    }
+
+    form label {
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form select,
+    form button[type="submit"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 3px;
+    }
+
+    form input[type="number"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 3px;
+    }
+
+    form select {
+        height: 25px;
+    }
+
+    .amount-buttons {
+        margin-bottom: 3px;
+    }
+
+    .amount-options {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .amount-btn {
+        padding: 5px 10px;
+        margin: 3px;
+    }
+
+    #custom-amount-input {
+        margin-bottom: 5px;
+    }
+
+    /* Form validation */
+
+    form input[type="email"].error:focus {
+        outline: none;
+        box-shadow: 0 0 5px red;
+    }
+
+    #error-message,
+    #email-error {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .error.active {
+        display: block;
+    }
+
+    #signup-success-message {
+        color: green;
+    }
+
+
+    /* Button styling */
+
+    button[type="submit"] {
+        padding: 5px 10px;
+    }
+
+    button[type="button"] {
+        padding: 5px 10px;
+    }
+
+    button#pay-now-button {
+        margin: 10px auto 0;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+
+    .signup-form,
+    .donation-form {
+        padding: 20px;
+        width: 100%;
+        margin: 20px;
+    }
+
+
 }

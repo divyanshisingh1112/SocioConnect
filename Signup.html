@@ -3,7 +3,7 @@
 
 <head>
     <title>Signup Page</title>
-    <link rel="stylesheet" type="text/css" href="Signup.css">
+    <link rel="stylesheet" type="text/css" href="signup_new.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
@@ -33,23 +33,24 @@
 
                 <div class="amount-buttons">
                     <div class="amount-options">
-                        <button type="button" class="amount-btn" data-amount="10">$10</button>
-                        <button type="button" class="amount-btn" data-amount="20">$20</button>
+                        <button type="button" class="amount-btn" data-amount="25">$25</button>
                         <button type="button" class="amount-btn" data-amount="50">$50</button>
-                        <button type="button" class="amount-btn" id="custom-amount-btn">Custom Amount</button>
+                        <button type="button" class="amount-btn" data-amount="100">$100</button>
+                        <button type="button" class="amount-btn" id="custom-amount-btn" data-amount="custom">Custom
+                            Amount</button>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="form-group-id">
                         <label for="custom-amount-input">Custom Amount</label>
                         <input type="number" id="custom-amount-input" name="amount" class="form-control" min="1"
                             step="1" placeholder="Enter custom amount">
                     </div>
-                    <label for="payment-method">Payment Method:</label>
-                    <select id="payment-method" name="payment-method">
-                        <option value="credit-card">Credit Card</option>
-                        <option value="paypal">PayPal</option>
-                    </select>
-                    <button type="submit" id="pay-now-button">Pay Now</button>
                 </div>
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method">
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+                <button type="submit" id="pay-now-button">Pay Now</button>
             </form>
         </div>
     </div>
@@ -61,9 +62,12 @@
         const emailError = document.getElementById('email-error');
         const signupForm = document.getElementById('signup-form');
         const signupSuccessMessage = document.getElementById('signup-success-message');
+
+
         const amountButtons = document.querySelectorAll('.amount-btn');
         const customAmountInput = document.getElementById('custom-amount-input');
         const customAmountBtn = document.getElementById('custom-amount-btn');
+        const formGroup = document.getElementById('form-group-id')
         const paymentForm = document.querySelector('.donation-form form');
         const payNowButton = document.getElementById('pay-now-button');
 
@@ -104,17 +108,22 @@
                     }
                 });
 
+
+
                 if (amount === 'custom') {
                     // Enable custom amount input if custom button is selected
+                    formGroup.style.display = "block";
                     customAmountInput.disabled = false;
                 } else {
                     // Set the custom amount input to empty and disable it if another button is selected
+                    formGroup.style.display = "none";
                     customAmountInput.value = '';
                     customAmountInput.disabled = true;
+                    payNowButton.innerHTML = 'Pay $' + amount;
                 }
 
                 // Update the pay now button text
-                payNowButton.innerHTML = 'Pay $' + amount;
+
 
                 // Enable the pay now button
                 payNowButton.disabled = false;
@@ -131,7 +140,9 @@
             }
 
             // Update the pay now button text
+
             payNowButton.innerHTML = 'Pay $' + customAmount;
+
 
             // Enable the pay now button
             payNowButton.disabled = false;
